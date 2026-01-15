@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Golden Choice Contracting & Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Optional: swap to your brand font later -->
+<style>
+:root{
+  --base-w: 1440;
+  --base-h: 810;
+  --max-w: 1200px;
+  --page-radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.18);
+  --bg: #0b0b0f;
+  --text: #f6f6f7;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: radial-gradient(1200px 600px at 50% 0%, #1a1020 0%, var(--bg) 55%, #06060a 100%);
+  color: var(--text);
+}
+a{color:inherit}
+header{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(10px);
+  background: rgba(10,10,14,.65);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.nav{
+  max-width: min(var(--max-w), 96vw);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 8px;
+  gap:12px;
+}
+.brand{font-weight:700; letter-spacing:.2px; font-size:14px; opacity:.95}
+.links{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end}
+.links a{
+  text-decoration:none;
+  font-size:13px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+}
+.links a:hover{background: rgba(255,255,255,.10)}
+main{padding: 18px 0 48px}
+.page-wrap{
+  max-width: min(var(--max-w), 96vw);
+  margin: 0 auto 22px auto;
+  padding: 0 8px;
+}
+.page{
+  width:100%;
+  aspect-ratio: calc(var(--base-w) / var(--base-h));
+  position:relative;
+  overflow:hidden;
+  border-radius: var(--page-radius);
+  box-shadow: var(--shadow);
+  background: #111;
+}
+.page::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image: var(--bgimg);
+  background-size: cover; /* aspect matches, so cover == contain here */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.txt{
+  position:absolute;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: calc(var(--w) * 100%);
+  height: calc(var(--h) * 100%);
+  color: var(--c, #fff);
+  font-family: var(--ff, "Calibri", Arial, sans-serif);
+  font-size: calc(var(--scale, 1) * var(--fs, 14) * 1px);
+  line-height: 1.1;
+  white-space: pre-wrap;
+  pointer-events:none;
+}
+.footer-note{
+  max-width: min(var(--max-w), 96vw);
+  margin: 18px auto 0;
+  padding: 0 8px;
+  opacity:.82;
+  font-size:13px;
+}
+@media (max-width:640px){
+  .brand{display:none}
+  .links a{font-size:12px; padding:7px 9px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">Golden Choice — Company Profile</div>
+    <nav class="links">
+<a href="#page-01">Home</a>
+<a href="#page-07">About</a>
+<a href="#page-12">Services</a>
+<a href="#page-13">Industries</a>
+<a href="#page-16">Recruitment</a>
+<a href="#page-14">Clients</a>
+<a href="#page-17">Certificates</a>
+<a href="#page-19">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-wrap" id="page-01">
+  <div class="page" style="--bgimg: url('assets/page-01.webp');" data-basew="1440">
+  </div>
+</section>
+<section class="page-wrap" id="page-02">
+  <div class="page" style="--bgimg: url('assets/page-02.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.349069;--y:0.378200;--w:0.118381;--h:0.068915;--fs:50.06;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">QATAR</div>
+    <div class="txt" style="--x:0.123132;--y:0.478401;--w:0.348104;--h:0.028907;--fs:21.00;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">&quot;A Hub of Hospitality and Contracting Excellence&quot;</div>
+    <div class="txt" style="--x:0.123132;--y:0.553760;--w:0.388439;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">Qatar is known for its booming hospitality industry, with numerous</div>
+    <div class="txt" style="--x:0.123132;--y:0.597315;--w:0.397630;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">hotels, resorts, and luxury accommodations catering to both leisure</div>
+    <div class="txt" style="--x:0.123132;--y:0.630622;--w:0.382608;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">and business travelers. Additionally, the contracting and services</div>
+    <div class="txt" style="--x:0.123132;--y:0.664019;--w:0.359701;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">sector plays a crucial role in supporting Qatar&#x27;s infrastructure</div>
+    <div class="txt" style="--x:0.123132;--y:0.697352;--w:0.407558;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">development, with companies involved in construction, maintenance,</div>
+    <div class="txt" style="--x:0.123132;--y:0.730686;--w:0.358024;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">and facility management. These companies contribute to the</div>
+    <div class="txt" style="--x:0.123132;--y:0.764019;--w:0.409960;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">country&#x27;s economic growth and help maintain its reputation for quality</div>
+    <div class="txt" style="--x:0.123132;--y:0.797352;--w:0.095030;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">service delivery.</div>
+    <div class="txt" style="--x:0.123132;--y:0.389687;--w:0.213707;--h:0.052892;--fs:38.42;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">LET&#x27;S CONNECT</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-03">
+  <div class="page" style="--bgimg: url('assets/page-03.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.095951;--y:0.159749;--w:0.092030;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">Welcome to</div>
+    <div class="txt" style="--x:0.187882;--y:0.159749;--w:0.282997;--h:0.032905;--fs:23.90;--c:rgb(58,2,3);--ff:'ArialMT';">Golden Choice Contracting &amp; Services</div>
+    <div class="txt" style="--x:0.471069;--y:0.159749;--w:0.338590;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">, where excellence meets commitment. With a</div>
+    <div class="txt" style="--x:0.107382;--y:0.197146;--w:0.534312;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">proud history of contributing to Qatar&#x27;s growth, including our work for the</div>
+    <div class="txt" style="--x:0.641667;--y:0.197146;--w:0.116846;--h:0.032872;--fs:23.88;--c:rgb(112,22,47);--ff:'ArialMT';">FIFA World Cup</div>
+    <div class="txt" style="--x:0.758597;--y:0.197146;--w:0.048224;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">, we&#x27;re</div>
+    <div class="txt" style="--x:0.092951;--y:0.237887;--w:0.716134;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">dedicated to advancing the nation&#x27;s vision and delivering unparalleled service. Let&#x27;s build together</div>
+    <div class="txt" style="--x:0.387236;--y:0.278628;--w:0.198137;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">for a prosperous tomorrow.</div>
+    <div class="txt" style="--x:0.228264;--y:0.087032;--w:0.532412;--h:0.055007;--fs:39.96;--c:rgb(58,2,3);--ff:'Arial-BoldMT';">ENTRUSTED THE SPANKING SERVICES</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-04">
+  <div class="page" style="--bgimg: url('assets/page-04.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.031700;--y:0.167646;--w:0.107036;--h:0.056989;--fs:41.40;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">AWARD</div>
+    <div class="txt" style="--x:0.031700;--y:0.225693;--w:0.156519;--h:0.057022;--fs:41.42;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">FUNCTION</div>
+    <div class="txt" style="--x:0.031700;--y:0.283670;--w:0.071993;--h:0.056989;--fs:41.40;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">2023</div>
+    <div class="txt" style="--x:0.031700;--y:0.353679;--w:0.119950;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">&quot;In 2023, Golden</div>
+    <div class="txt" style="--x:0.031700;--y:0.396050;--w:0.107035;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">Choice proudly</div>
+    <div class="txt" style="--x:0.031700;--y:0.435457;--w:0.118615;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">hosted an award</div>
+    <div class="txt" style="--x:0.031700;--y:0.475037;--w:0.143592;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">function, celebrating</div>
+    <div class="txt" style="--x:0.031700;--y:0.514593;--w:0.106954;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">excellence and</div>
+    <div class="txt" style="--x:0.031700;--y:0.554000;--w:0.146278;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">dedication within our</div>
+    <div class="txt" style="--x:0.031700;--y:0.593556;--w:0.099781;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">team. It was a</div>
+    <div class="txt" style="--x:0.031700;--y:0.633111;--w:0.083955;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">momentous</div>
+    <div class="txt" style="--x:0.031700;--y:0.672492;--w:0.153481;--h:0.031914;--fs:23.18;--c:rgb(255,255,255);--ff:'ArialMT';">occasion, highlighting</div>
+    <div class="txt" style="--x:0.031700;--y:0.712111;--w:0.132816;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">our commitment to</div>
+    <div class="txt" style="--x:0.031700;--y:0.751667;--w:0.113355;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">recognizing and</div>
+    <div class="txt" style="--x:0.031700;--y:0.791074;--w:0.070445;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">rewarding</div>
+    <div class="txt" style="--x:0.031700;--y:0.830630;--w:0.083087;--h:0.031881;--fs:23.16;--c:rgb(255,255,255);--ff:'ArialMT';">outstanding</div>
+    <div class="txt" style="--x:0.031700;--y:0.870156;--w:0.101382;--h:0.031914;--fs:23.18;--c:rgb(255,255,255);--ff:'ArialMT';">contributions.&quot;</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-05">
+  <div class="page" style="--bgimg: url('assets/page-05.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.774181;--y:0.189279;--w:0.112582;--h:0.055007;--fs:39.96;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">VISSION</div>
+    <div class="txt" style="--x:0.805667;--y:0.107733;--w:0.092065;--h:0.082130;--fs:59.66;--c:rgb(0,0,0);--ff:'ArialMT';">OUR</div>
+    <div class="txt" style="--x:0.439701;--y:0.306502;--w:0.416029;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">Our vision at Golden Choice Contracting &amp; Services is to</div>
+    <div class="txt" style="--x:0.517715;--y:0.343900;--w:0.334502;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">foster global prosperity and mutual welfare by</div>
+    <div class="txt" style="--x:0.424618;--y:0.384640;--w:0.420453;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">connecting skilled and unskilled manpower with overseas</div>
+    <div class="txt" style="--x:0.434785;--y:0.425381;--w:0.417137;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">businesses in need. We aspire to be the leading provider</div>
+    <div class="txt" style="--x:0.464465;--y:0.466122;--w:0.381532;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">of outsourced manpower recruitment across various</div>
+    <div class="txt" style="--x:0.483382;--y:0.506862;--w:0.371234;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">sectors, including hospitality, security, engineering,</div>
+    <div class="txt" style="--x:0.447618;--y:0.547628;--w:0.405379;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">construction, scientific, and IT. Through our unwavering</div>
+    <div class="txt" style="--x:0.426868;--y:0.588369;--w:0.415163;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">dedication to quality and integrity, we strive to be the first</div>
+    <div class="txt" style="--x:0.485965;--y:0.629109;--w:0.363826;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">choice for both off-shore employers and overseas</div>
+    <div class="txt" style="--x:0.433618;--y:0.669850;--w:0.413008;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">professionals seeking dependable recruitment solutions.</div>
+    <div class="txt" style="--x:0.505465;--y:0.710591;--w:0.343606;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">With continual expansion and a commitment to</div>
+    <div class="txt" style="--x:0.449285;--y:0.751369;--w:0.401847;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">excellence, we envision a future where companies and</div>
+    <div class="txt" style="--x:0.471215;--y:0.792109;--w:0.384103;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">job seekers alike trust us to deliver safe and efficient</div>
+    <div class="txt" style="--x:0.729819;--y:0.832850;--w:0.152036;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">manpower solutions.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-06">
+  <div class="page" style="--bgimg: url('assets/page-06.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.091215;--y:0.130044;--w:0.092028;--h:0.082097;--fs:59.64;--c:rgb(0,20,9);--ff:'ArialMT';">OUR</div>
+    <div class="txt" style="--x:0.091215;--y:0.214255;--w:0.117272;--h:0.055007;--fs:39.96;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">MISSION</div>
+    <div class="txt" style="--x:0.091215;--y:0.357206;--w:0.395080;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">Golden Choice Contracting &amp; Services is dedicated to</div>
+    <div class="txt" style="--x:0.091215;--y:0.394591;--w:0.402709;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">providing unparalleled services in facility management,</div>
+    <div class="txt" style="--x:0.091215;--y:0.435332;--w:0.407485;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">waste management, and manpower recruitment. With a</div>
+    <div class="txt" style="--x:0.091215;--y:0.476072;--w:0.430138;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">focus on expertise, resources, and exceptional service, we</div>
+    <div class="txt" style="--x:0.091215;--y:0.516813;--w:0.395595;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">aim to meet the needs of companies, contractors, and</div>
+    <div class="txt" style="--x:0.091215;--y:0.557527;--w:0.368138;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">candidates in Qatar and beyond. Our mission is to</div>
+    <div class="txt" style="--x:0.091215;--y:0.598332;--w:0.404146;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">synchronize vacancies with the best-suited candidates,</div>
+    <div class="txt" style="--x:0.091215;--y:0.639072;--w:0.433455;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">ensuring maximum efficiency and satisfaction for all parties</div>
+    <div class="txt" style="--x:0.091215;--y:0.679813;--w:0.419442;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">involved. We are committed to maintaining our reputation</div>
+    <div class="txt" style="--x:0.091215;--y:0.720554;--w:0.409625;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">as a reliable and genuine manpower supplier, delivering</div>
+    <div class="txt" style="--x:0.091215;--y:0.761295;--w:0.325133;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">quality solutions since our inception in 1987.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-07">
+  <div class="page" style="--bgimg: url('assets/page-07.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.093264;--y:0.136264;--w:0.133197;--h:0.068882;--fs:50.04;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">ABOUT</div>
+    <div class="txt" style="--x:0.093264;--y:0.198028;--w:0.246019;--h:0.065248;--fs:47.40;--c:rgb(0,0,0);--ff:'ArialMT';">OUR COMPANY</div>
+    <div class="txt" style="--x:0.053850;--y:0.280208;--w:0.378448;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">Golden Choice Contracting &amp; Services, established in</div>
+    <div class="txt" style="--x:0.053850;--y:0.323764;--w:0.040016;--h:0.031716;--fs:23.04;--c:rgb(112,22,47);--ff:'ArialMT';">Qatar</div>
+    <div class="txt" style="--x:0.098097;--y:0.323764;--w:0.012479;--h:0.031716;--fs:23.04;--c:rgb(112,22,47);--ff:'ArialMT';">in</div>
+    <div class="txt" style="--x:0.114931;--y:0.323764;--w:0.035646;--h:0.031716;--fs:23.04;--c:rgb(112,22,47);--ff:'ArialMT';">2018</div>
+    <div class="txt" style="--x:0.150597;--y:0.323764;--w:0.229520;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">, specializes in facility and waste</div>
+    <div class="txt" style="--x:0.053850;--y:0.363208;--w:0.363056;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">management and manpower recruitment. With over</div>
+    <div class="txt" style="--x:0.053850;--y:0.402764;--w:0.343088;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">three decades of experience, Golden Choice HR</div>
+    <div class="txt" style="--x:0.053850;--y:0.442320;--w:0.299712;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">Solution in Qatar has provided exceptional</div>
+    <div class="txt" style="--x:0.053850;--y:0.481727;--w:0.314640;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">recruitment services across various sectors.</div>
+    <div class="txt" style="--x:0.053850;--y:0.521282;--w:0.380544;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">We pride ourselves on offering unparalleled expertise,</div>
+    <div class="txt" style="--x:0.053850;--y:0.560863;--w:0.356397;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">resources, and service to companies, contractors,</div>
+    <div class="txt" style="--x:0.053850;--y:0.600270;--w:0.311984;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">and candidates. Our goal is to ensure global</div>
+    <div class="txt" style="--x:0.053850;--y:0.639826;--w:0.348288;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">prosperity and mutual welfare by providing skilled</div>
+    <div class="txt" style="--x:0.053850;--y:0.679381;--w:0.351952;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">and unskilled manpower to overseas businesses.</div>
+    <div class="txt" style="--x:0.053850;--y:0.718789;--w:0.349156;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">We strive to match vacancies with the best-suited</div>
+    <div class="txt" style="--x:0.053850;--y:0.758317;--w:0.360727;--h:0.031749;--fs:23.06;--c:rgb(0,0,0);--ff:'ArialMT';">candidates promptly and at competitive pay scales.</div>
+    <div class="txt" style="--x:0.053850;--y:0.797937;--w:0.329888;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">Since our inception in 2018, we&#x27;ve remained a</div>
+    <div class="txt" style="--x:0.053850;--y:0.837344;--w:0.360672;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">reliable and genuine manpower supplier committed</div>
+    <div class="txt" style="--x:0.053850;--y:0.876895;--w:0.344128;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">to quality. You can trust us to deliver efficient and</div>
+    <div class="txt" style="--x:0.053850;--y:0.916450;--w:0.239344;--h:0.031716;--fs:23.04;--c:rgb(0,0,0);--ff:'ArialMT';">dependable recruitment solutions.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-08">
+  <div class="page" style="--bgimg: url('assets/page-08.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.598681;--y:0.245867;--w:0.173764;--h:0.068915;--fs:50.06;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">MESSAGE</div>
+    <div class="txt" style="--x:0.509250;--y:0.337565;--w:0.333851;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">&quot;I am driven by a vision for excellence, we assure</div>
+    <div class="txt" style="--x:0.481000;--y:0.379195;--w:0.377315;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">impeccable manpower solutions, fostering partnerships</div>
+    <div class="txt" style="--x:0.515347;--y:0.415047;--w:0.312162;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">that redefine industry standards and empower</div>
+    <div class="txt" style="--x:0.600347;--y:0.450899;--w:0.158185;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">organizational growth.&quot;</div>
+    <div class="txt" style="--x:0.113347;--y:0.891612;--w:0.213024;--h:0.046913;--fs:34.08;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">Mr. Moshahid Reza</div>
+    <div class="txt" style="--x:0.644167;--y:0.179746;--w:0.085216;--h:0.055040;--fs:39.98;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">CEO&#x27;S</div>
+    <div class="txt" style="--x:0.489181;--y:0.526538;--w:0.352477;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">As Chairman of Golden Choice, I&#x27;m committed to upholding</div>
+    <div class="txt" style="--x:0.489181;--y:0.556908;--w:0.327719;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">our promises and enhancing organizational productivity</div>
+    <div class="txt" style="--x:0.489181;--y:0.590241;--w:0.355073;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">through Qator professionals, setting industry standards, and</div>
+    <div class="txt" style="--x:0.489181;--y:0.623548;--w:0.330886;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">fostering mutually beneficial partnerships with Nepalese</div>
+    <div class="txt" style="--x:0.489181;--y:0.656933;--w:0.146161;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">talent and organizations.</div>
+    <div class="txt" style="--x:0.489181;--y:0.715303;--w:0.302606;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">We propose a strategic alliance to provide efficient,</div>
+    <div class="txt" style="--x:0.489181;--y:0.756933;--w:0.340712;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">economic, and confidential manpower solutions, ensuring</div>
+    <div class="txt" style="--x:0.489181;--y:0.790266;--w:0.340597;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">satisfaction with blue- and white-collar recruitment needs.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-09">
+  <div class="page" style="--bgimg: url('assets/page-09.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.650819;--y:0.893716;--w:0.219603;--h:0.046913;--fs:34.08;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">Mr. Pragyanand Rai</div>
+    <div class="txt" style="--x:0.225667;--y:0.244684;--w:0.173681;--h:0.068882;--fs:50.04;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">MESSAGE</div>
+    <div class="txt" style="--x:0.136736;--y:0.338096;--w:0.328652;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">&quot;Empowering Success through Integrity, Quality,</div>
+    <div class="txt" style="--x:0.249667;--y:0.380440;--w:0.118615;--h:0.028114;--fs:20.42;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">and Partnership.&quot;</div>
+    <div class="txt" style="--x:0.154368;--y:0.181341;--w:0.311161;--h:0.055007;--fs:39.96;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">GENERAL MANAGER&#x27;S</div>
+    <div class="txt" style="--x:0.116167;--y:0.442710;--w:0.196782;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">As a General Manager of Golden</div>
+    <div class="txt" style="--x:0.316681;--y:0.442710;--w:0.209259;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">Choice. With over three decades of</div>
+    <div class="txt" style="--x:0.116167;--y:0.473081;--w:0.341870;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">experience, we are proud to be a trusted partner in facility</div>
+    <div class="txt" style="--x:0.116167;--y:0.506414;--w:0.373984;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">management, waste management, and manpower recruitment,</div>
+    <div class="txt" style="--x:0.116167;--y:0.539747;--w:0.409760;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">delivering tailored solutions to meet the needs of businesses in Qatar</div>
+    <div class="txt" style="--x:0.116167;--y:0.573054;--w:0.340660;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">and worldwide. Our commitment to quality, efficiency, and</div>
+    <div class="txt" style="--x:0.116167;--y:0.606439;--w:0.397609;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">professionalism drives everything we do, empowering our clients to</div>
+    <div class="txt" style="--x:0.116167;--y:0.639772;--w:0.115504;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">achieve their goals.</div>
+    <div class="txt" style="--x:0.116167;--y:0.698142;--w:0.421040;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">At Golden Choice, we believe in creating mutual growth and value. Our</div>
+    <div class="txt" style="--x:0.116167;--y:0.739772;--w:0.413931;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">approach centers on integrity and shared success, benefiting both our</div>
+    <div class="txt" style="--x:0.116167;--y:0.773105;--w:0.362424;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">clients and the talented individuals we support. Thank you for</div>
+    <div class="txt" style="--x:0.116167;--y:0.806476;--w:0.423631;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">considering us as your partner; we look forward to building a successful</div>
+    <div class="txt" style="--x:0.116167;--y:0.839809;--w:0.090402;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">future together.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-10">
+  <div class="page" style="--bgimg: url('assets/page-10.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.671153;--y:0.893716;--w:0.183843;--h:0.046913;--fs:34.08;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">Mr. Vikas Kumar</div>
+    <div class="txt" style="--x:0.225667;--y:0.219918;--w:0.173681;--h:0.068882;--fs:50.04;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">MESSAGE</div>
+    <div class="txt" style="--x:0.145819;--y:0.305923;--w:0.312758;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">&quot;With relentless dedication to our mission and</div>
+    <div class="txt" style="--x:0.127153;--y:0.345775;--w:0.347239;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">vision, we are determined to deliver on our promise</div>
+    <div class="txt" style="--x:0.167319;--y:0.381627;--w:0.271887;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">of exceptional value.with Golden Choice</div>
+    <div class="txt" style="--x:0.217917;--y:0.417479;--w:0.177678;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Contracting and Services&quot;</div>
+    <div class="txt" style="--x:0.227014;--y:0.101341;--w:0.162782;--h:0.055007;--fs:39.96;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">OPERATION</div>
+    <div class="txt" style="--x:0.188097;--y:0.159388;--w:0.231963;--h:0.055040;--fs:39.98;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">COORDINATOR&#x27;S</div>
+    <div class="txt" style="--x:0.119285;--y:0.497760;--w:0.351078;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">At Golden Choice, we are driven by a singular purpose – to</div>
+    <div class="txt" style="--x:0.119285;--y:0.528130;--w:0.387688;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">provide exceptional value to our clients. Therefore, we continually</div>
+    <div class="txt" style="--x:0.119285;--y:0.561463;--w:0.338181;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">improve our operations to meet their evolving needs. Our</div>
+    <div class="txt" style="--x:0.119285;--y:0.594770;--w:0.372753;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">operational flexibility and commitment to high quality standards</div>
+    <div class="txt" style="--x:0.119285;--y:0.628167;--w:0.379678;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">allow us to swiftly respond to their requests as soon as the need</div>
+    <div class="txt" style="--x:0.119285;--y:0.661500;--w:0.039593;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">arises.</div>
+    <div class="txt" style="--x:0.119285;--y:0.694834;--w:0.363283;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">Maintaining such standards has only been possible through a</div>
+    <div class="txt" style="--x:0.119285;--y:0.728167;--w:0.351808;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">dedicated workforce, whose well-being and safety remain a</div>
+    <div class="txt" style="--x:0.119285;--y:0.761500;--w:0.353634;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">priority. As such, we have implemented stringent Adopting a</div>
+    <div class="txt" style="--x:0.119285;--y:0.794807;--w:0.365442;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">preventative and proactive approach to safety, we are able to</div>
+    <div class="txt" style="--x:0.119285;--y:0.828192;--w:0.372410;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">focus on streamlining operations and supporting new growth to</div>
+    <div class="txt" style="--x:0.119285;--y:0.861525;--w:0.076904;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">organisation.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-11">
+  <div class="page" style="--bgimg: url('assets/page-11.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.384264;--y:0.807874;--w:0.204385;--h:0.046913;--fs:34.08;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">Mr. Akash Sharma</div>
+    <div class="txt" style="--x:0.412153;--y:0.236474;--w:0.173681;--h:0.068882;--fs:50.04;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">MESSAGE</div>
+    <div class="txt" style="--x:0.297465;--y:0.323516;--w:0.384101;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">&quot;Empowering Financial Success: Trust in Our Dedication</div>
+    <div class="txt" style="--x:0.410403;--y:0.363664;--w:0.170737;--h:0.028081;--fs:20.40;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">to Precision and Growth&quot;</div>
+    <div class="txt" style="--x:0.360465;--y:0.175921;--w:0.261266;--h:0.055007;--fs:39.96;--c:rgb(112,22,47);--ff:'Arial-BoldMT';">ADMIN ACCOUNT&#x27;S</div>
+    <div class="txt" style="--x:0.183431;--y:0.486883;--w:0.553412;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">Our accounting team, dedicated to financial integrity and growth, ensures precise and reliable</div>
+    <div class="txt" style="--x:0.175097;--y:0.517254;--w:0.572557;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">services. With meticulous attention to detail, we uphold the highest standards, safeguarding your</div>
+    <div class="txt" style="--x:0.197347;--y:0.550587;--w:0.526436;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">financial health. Committed to transparency and efficiency, we navigate complexities with</div>
+    <div class="txt" style="--x:0.324201;--y:0.583893;--w:0.313507;--h:0.026628;--fs:19.34;--c:rgb(0,0,0);--ff:'ArialMT';">expertise, providing tailored solutions for your needs.</div>
+    <div class="txt" style="--x:0.183847;--y:0.617291;--w:0.560581;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">Our focus extends beyond numbers; we strive to empower your organization&#x27;s journey towards</div>
+    <div class="txt" style="--x:0.182764;--y:0.650624;--w:0.561097;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">success. Trust in our proficiency to manage your finances with precision, enabling you to make</div>
+    <div class="txt" style="--x:0.174431;--y:0.683957;--w:0.574272;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">informed decisions and seize opportunities. Together, let&#x27;s build a solid foundation for sustainable</div>
+    <div class="txt" style="--x:0.424201;--y:0.717291;--w:0.131725;--h:0.026595;--fs:19.32;--c:rgb(0,0,0);--ff:'ArialMT';">growth and prosperity.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-12">
+  <div class="page" style="--bgimg: url('assets/page-12.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.244153;--y:0.220474;--w:0.488064;--h:0.068882;--fs:50.04;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">WINGS OF GOLDEN CHOICE</div>
+    <div class="txt" style="--x:0.456035;--y:0.780120;--w:0.076395;--h:0.030592;--fs:22.22;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Manpower</div>
+    <div class="txt" style="--x:0.451035;--y:0.811431;--w:0.091683;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Outsourcing</div>
+    <div class="txt" style="--x:0.467035;--y:0.844764;--w:0.067702;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Services</div>
+    <div class="txt" style="--x:0.840736;--y:0.844186;--w:0.033588;--h:0.030724;--fs:22.32;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">PRO</div>
+    <div class="txt" style="--x:0.825153;--y:0.878100;--w:0.063424;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Services</div>
+    <div class="txt" style="--x:0.654250;--y:0.763764;--w:0.078764;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Hospitality</div>
+    <div class="txt" style="--x:0.664333;--y:0.795023;--w:0.063424;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Services</div>
+    <div class="txt" style="--x:0.246000;--y:0.763764;--w:0.105404;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Housekeeping</div>
+    <div class="txt" style="--x:0.269583;--y:0.795023;--w:0.063424;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Services</div>
+    <div class="txt" style="--x:0.093701;--y:0.846515;--w:0.089976;--h:0.030592;--fs:22.22;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Recruitment</div>
+    <div class="txt" style="--x:0.109201;--y:0.877833;--w:0.063424;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Services</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-13">
+  <div class="page" style="--bgimg: url('assets/page-13.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.063800;--y:0.597122;--w:0.095907;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Construction</div>
+    <div class="txt" style="--x:0.159597;--y:0.373147;--w:0.078764;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Hospitality</div>
+    <div class="txt" style="--x:0.255833;--y:0.597567;--w:0.059647;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Tourism</div>
+    <div class="txt" style="--x:0.294181;--y:0.373147;--w:0.151453;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Facility Management</div>
+    <div class="txt" style="--x:0.390681;--y:0.597567;--w:0.132491;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Furniture Industry</div>
+    <div class="txt" style="--x:0.486347;--y:0.373147;--w:0.114731;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Plastic Industry</div>
+    <div class="txt" style="--x:0.575903;--y:0.597567;--w:0.101904;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Steel Industry</div>
+    <div class="txt" style="--x:0.665236;--y:0.373147;--w:0.102305;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Wood Factory</div>
+    <div class="txt" style="--x:0.745069;--y:0.597567;--w:0.114731;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">Marine Industry</div>
+    <div class="txt" style="--x:0.833549;--y:0.373147;--w:0.107608;--h:0.030559;--fs:22.20;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">MEP Company</div>
+    <div class="txt" style="--x:0.296250;--y:0.181867;--w:0.402633;--h:0.068915;--fs:50.06;--c:rgb(255,255,255);--ff:'Arial-BoldMT';">INDUSTRIES WE SERVE</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-14">
+  <div class="page" style="--bgimg: url('assets/page-14.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.280347;--y:0.117659;--w:0.431561;--h:0.068882;--fs:50.04;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">OUR VALUABLE CLIENTS</div>
+    <div class="txt" style="--x:0.055117;--y:0.786295;--w:0.791472;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">At Golden Choice Contracting &amp; Services, our clients are at the heart of everything we do. We prioritize their</div>
+    <div class="txt" style="--x:0.090451;--y:0.823628;--w:0.726117;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">needs, ensuring satisfaction and success in every project. With a focus on innovation, integrity, and</div>
+    <div class="txt" style="--x:0.060367;--y:0.864344;--w:0.766622;--h:0.032905;--fs:23.90;--c:rgb(0,0,0);--ff:'ArialMT';">collaboration, we forge lasting partnerships, driving mutual prosperity and contributing to Qatar&#x27;s national</div>
+    <div class="txt" style="--x:0.226882;--y:0.905141;--w:0.483387;--h:0.032872;--fs:23.88;--c:rgb(0,0,0);--ff:'ArialMT';">advancement. Let&#x27;s connect for unparalleled service and success.</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-15">
+  <div class="page" style="--bgimg: url('assets/page-15.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.106819;--y:0.591490;--w:0.037707;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">India</div>
+    <div class="txt" style="--x:0.254153;--y:0.591490;--w:0.063471;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">Pakistan</div>
+    <div class="txt" style="--x:0.400417;--y:0.591490;--w:0.085804;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">Bangladesh</div>
+    <div class="txt" style="--x:0.575514;--y:0.591490;--w:0.065207;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">SriLanka</div>
+    <div class="txt" style="--x:0.740785;--y:0.591490;--w:0.046331;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">Ghana</div>
+    <div class="txt" style="--x:0.088882;--y:0.855878;--w:0.071119;--h:0.030559;--fs:22.20;--c:rgb(0,0,0);--ff:'ArialMT';">Philippine</div>
+    <div class="txt" style="--x:0.259569;--y:0.854558;--w:0.053559;--h:0.030724;--fs:22.32;--c:rgb(0,0,0);--ff:'ArialMT';">Tunisia</div>
+    <div class="txt" style="--x:0.419333;--y:0.855878;--w:0.051536;--h:0.030559;--fs:22.20;--c:rgb(0,0,0);--ff:'ArialMT';">Jordan</div>
+    <div class="txt" style="--x:0.583583;--y:0.855878;--w:0.047966;--h:0.030559;--fs:22.20;--c:rgb(0,0,0);--ff:'ArialMT';">Kenya</div>
+    <div class="txt" style="--x:0.739764;--y:0.855878;--w:0.048856;--h:0.030559;--fs:22.20;--c:rgb(0,0,0);--ff:'ArialMT';">Nigeria</div>
+    <div class="txt" style="--x:0.352201;--y:0.119057;--w:0.286658;--h:0.055007;--fs:39.96;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">HUMAN RESOURCES</div>
+    <div class="txt" style="--x:0.289701;--y:0.180064;--w:0.401381;--h:0.068915;--fs:50.06;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">SOURCING COUNTRIES</div>
+    <div class="txt" style="--x:0.879847;--y:0.723194;--w:0.040312;--h:0.030592;--fs:22.22;--c:rgb(0,0,0);--ff:'ArialMT';">Nepal</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-16">
+  <div class="page" style="--bgimg: url('assets/page-16.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.097153;--y:0.330027;--w:0.071760;--h:0.020318;--fs:14.76;--c:rgb(0,20,9);--ff:'Arial-BoldMT';">Demand Letter</div>
+    <div class="txt" style="--x:0.108236;--y:0.350768;--w:0.049425;--h:0.020318;--fs:14.76;--c:rgb(0,20,9);--ff:'Arial-BoldMT';">And Legal</div>
+    <div class="txt" style="--x:0.105153;--y:0.373015;--w:0.055709;--h:0.020318;--fs:14.76;--c:rgb(0,20,9);--ff:'Arial-BoldMT';">Documents</div>
+    <div class="txt" style="--x:0.144667;--y:0.610595;--w:0.070889;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Advertisement</div>
+    <div class="txt" style="--x:0.160083;--y:0.631336;--w:0.040426;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">in origin</div>
+    <div class="txt" style="--x:0.161500;--y:0.653558;--w:0.037515;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">country</div>
+    <div class="txt" style="--x:0.211347;--y:0.336521;--w:0.034081;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Collect</div>
+    <div class="txt" style="--x:0.191847;--y:0.357262;--w:0.073154;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">candidate&#x27;s CV</div>
+    <div class="txt" style="--x:0.242736;--y:0.610595;--w:0.066512;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">CV Screening</div>
+    <div class="txt" style="--x:0.317083;--y:0.336521;--w:0.014253;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">CV</div>
+    <div class="txt" style="--x:0.295653;--y:0.357262;--w:0.056908;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Shortlisting</div>
+    <div class="txt" style="--x:0.350118;--y:0.610595;--w:0.038110;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Primary</div>
+    <div class="txt" style="--x:0.346951;--y:0.631336;--w:0.044136;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Interview</div>
+    <div class="txt" style="--x:0.376465;--y:0.336521;--w:0.072283;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Final Selection</div>
+    <div class="txt" style="--x:0.385882;--y:0.357262;--w:0.053556;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">to send CV</div>
+    <div class="txt" style="--x:0.430153;--y:0.610595;--w:0.059102;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Short listed</div>
+    <div class="txt" style="--x:0.438986;--y:0.631336;--w:0.041502;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">by client</div>
+    <div class="txt" style="--x:0.485403;--y:0.336521;--w:0.044136;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Interview</div>
+    <div class="txt" style="--x:0.485403;--y:0.357262;--w:0.044413;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">By Client</div>
+    <div class="txt" style="--x:0.530465;--y:0.610595;--w:0.051896;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Issue offer</div>
+    <div class="txt" style="--x:0.543882;--y:0.631336;--w:0.025010;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">letter</div>
+    <div class="txt" style="--x:0.572181;--y:0.322620;--w:0.059809;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Signed offer</div>
+    <div class="txt" style="--x:0.567014;--y:0.343334;--w:0.070101;--h:0.020351;--fs:14.78;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">letter return to</div>
+    <div class="txt" style="--x:0.588681;--y:0.365608;--w:0.026681;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">client</div>
+    <div class="txt" style="--x:0.626931;--y:0.611509;--w:0.053085;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Issue VISA</div>
+    <div class="txt" style="--x:0.675486;--y:0.336521;--w:0.022212;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">QVC</div>
+    <div class="txt" style="--x:0.666903;--y:0.357262;--w:0.039206;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">process</div>
+    <div class="txt" style="--x:0.716285;--y:0.610595;--w:0.034091;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Finger/</div>
+    <div class="txt" style="--x:0.714618;--y:0.631336;--w:0.037433;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Medical</div>
+    <div class="txt" style="--x:0.718951;--y:0.653558;--w:0.029069;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">(QVC)</div>
+    <div class="txt" style="--x:0.757882;--y:0.336521;--w:0.049180;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">VISA print</div>
+    <div class="txt" style="--x:0.761882;--y:0.357262;--w:0.041502;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">by client</div>
+    <div class="txt" style="--x:0.798583;--y:0.610595;--w:0.060014;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Government</div>
+    <div class="txt" style="--x:0.801417;--y:0.631336;--w:0.054878;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Process in</div>
+    <div class="txt" style="--x:0.792000;--y:0.653558;--w:0.073175;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">origin Country</div>
+    <div class="txt" style="--x:0.848951;--y:0.336521;--w:0.062094;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Deploy Date/</div>
+    <div class="txt" style="--x:0.841868;--y:0.357262;--w:0.076198;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Flight Schedule</div>
+    <div class="txt" style="--x:0.902417;--y:0.611509;--w:0.045766;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Deployed</div>
+    <div class="txt" style="--x:0.916417;--y:0.632250;--w:0.018194;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">and</div>
+    <div class="txt" style="--x:0.901833;--y:0.654472;--w:0.046904;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Handover</div>
+    <div class="txt" style="--x:0.905000;--y:0.676694;--w:0.040774;--h:0.020318;--fs:14.76;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">Workers</div>
+    <div class="txt" style="--x:0.254403;--y:0.115768;--w:0.472792;--h:0.068915;--fs:50.06;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">MANPOWER RECRUITMENT</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-17">
+  <div class="page" style="--bgimg: url('assets/page-17.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.337833;--y:0.080301;--w:0.319978;--h:0.068882;--fs:50.04;--c:rgb(58,2,3);--ff:'Arial-BoldMT';">ISO CERTIFICATES</div>
+  </div>
+</section>
+<section class="page-wrap" id="page-18">
+  <div class="page" style="--bgimg: url('assets/page-18.webp');" data-basew="1440">
+  </div>
+</section>
+<section class="page-wrap" id="page-19">
+  <div class="page" style="--bgimg: url('assets/page-19.webp');" data-basew="1440">
+    <div class="txt" style="--x:0.653215;--y:0.160195;--w:0.258728;--h:0.082626;--fs:60.02;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">THANK YOU</div>
+    <div class="txt" style="--x:0.074181;--y:0.546909;--w:0.115662;--h:0.055007;--fs:39.96;--c:rgb(0,0,0);--ff:'Arial-BoldMT';">VISIT US</div>
+  </div>
+</section>
+</main>
+<div class="footer-note">
+  <div><strong>Note:</strong> This site is generated from your PDF slides. Backgrounds are full-page renders; extracted text is overlaid for selectability & SEO.</div>
+  <div>If you want a truly responsive “web-native” layout (cards/timeline/logo grid), we can convert these pages into semantic sections next.</div>
+</div>
+
+<script>
+/* Keeps text pixel-close while pages scale responsively */
+function updateScale(){
+  document.querySelectorAll('.page').forEach(page=>{
+    const baseW = Number(page.dataset.basew || 1440);
+    const scale = page.clientWidth / baseW;
+    page.style.setProperty('--scale', scale.toString());
+  });
+}
+window.addEventListener('resize', updateScale);
+window.addEventListener('load', updateScale);
+</script>
+</body>
+</html>
